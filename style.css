@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(101, 100, 100, 0.084);
+}
+.navbar img{
+    width: 300px;
+    height: 110px;  
+}
+.nav-right{
+    max-width: 850px;
+    width: 100%;
+}
+.services{
+    max-width: 620px;
+    width: 100%;
+}
+.services a{
+    font-weight: 500;
+    font-size: 20px;    
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+.services a:hover{
+    text-decoration: underline;
+    color: #333;
+}
+.contact{
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+.contact a{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+.contact a:hover{
+    color: #333;
+}
+.unusefull{
+    display: none;
+}
+@media (min-width:931px) and (max-width:1200px) {
+    .container{
+        max-width: 1050px;
+        width: 100%;
+    }
+    .navbar img{
+        width: 250px;
+        height: 80px;  
+    }
+    .nav-right{
+        max-width: 650px;
+        width: 100%;
+    }
+    .services{
+        max-width: 420px;
+        width: 100%;
+    }
+    .services a{
+        font-size: 16px;    
+    }
+    .contact{
+        max-width: 200px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .contact a{
+        font-size: 16px;
+    }
+    .unusefull{
+        display: none;
+    }
+}
+@media (min-width:769px) and (max-width:930px) {
+    .container{
+        max-width: 880px;
+        width: 100%;
+    }
+    .navbar img{
+        width: 200px;
+        height: 70px;  
+    }
+    .nav-right{
+        max-width: 600px;
+        width: 100%;
+    }
+    .services{
+        max-width: 420px;
+        width: 100%;
+    }
+    .services a{
+        font-size: 12px;    
+    }
+    .contact{
+        max-width: 200px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .contact a{
+        font-size: 14px;
+    }
+    .unusefull{
+        display: none;
+    }
+}
+@media (min-width:481px) and (max-width:768px) {
+    .container{
+        max-width: 700px;
+        width: 100%;
+    }
+    .navbar img{
+        width: 180px;
+        height: 60px;  
+    }
+    .nav-right{
+        max-width: 500px;
+        width: 100%;
+        justify-content: end;
+    }
+    .services{
+        max-width: 350px;
+        width: 100%;
+    }
+    .services a{
+        font-size: 10px;    
+    }
+    .dn{
+        display: none;
+    }
+}
+@media (min-width:320px) and (max-width:480px) {
+    .container{
+        max-width: 400px;
+        width: 100%;
+    }
+    nav{
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .navbar{
+        max-width: 400px;
+        width: 100%;
+    }
+    .navbar img{
+        width: 150px;
+        height: 50px;  
+    }
+    .nav-right{
+        max-width: 500px;
+        width: 100%;
+        justify-content: end;
+    }
+    .services a{
+        display: none;    
+    }
+    .usefull{
+        display: block;
+    }
+    .dn{
+        display: none;
+    }
+    input {
+        display: none;
+    }
+    i{
+        font-size: 30px;
+        background: #333;
+        color: #fff;
+        border: 1px solid #333;
+        padding: 5px 8px;
+        border-radius: 8px;
+    }
+    label {
+        z-index: 100;
+    }
+    .div-nav {
+        right: 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: -100%;
+        transition: 0.5s;
+    }
+    #burger:checked ~ .div-nav {
+        right: 0;
+    }
+    .div-nav{
+        display: flex;
+        justify-content: space-between;
+     }
+    .menu-bar{
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        color: #fff;
+        display: flex;
+        background-color: #000;
+        overflow: auto;
+    }
+}
